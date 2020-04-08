@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/home/home",
+    "pages/graph/graph",
+    "pages/notes/notes",
+    "pages/about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,5 +12,8 @@
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "custom": true,
+  }
 }
