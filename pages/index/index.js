@@ -1,11 +1,17 @@
-// pages/home/home.js
+// pages/index/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    PageCur: 'detail'
 
+  },
+  NavChange(e) {
+    this.setData({
+      PageCur: e.currentTarget.dataset.cur
+    })
   },
 
   /**

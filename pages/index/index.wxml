@@ -1,0 +1,34 @@
+<basics wx:if="{{PageCur=='basics'}}"></basics>
+<graph wx:if="{{PageCur=='graph'}}"></graph>
+<notes wx:if="{{PageCur=='notes'}}"></notes>
+<about wx:if="{{PageCur=='about'}}"></about>
+<view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action" bindtap="NavChange" data-cur="basics">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/detail{{PageCur=='detail'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='basics'?'text-green':'text-gray'}}">明细</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="graph">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/graph{{PageCur=='graph'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='graph'?'text-green':'text-gray'}}">图表</view>
+  </view>
+  <view class="action text-gray add-action">
+    <button class="cu-btn cuIcon-add bg-orange shadow" bindtap='goto'></button>
+    记账
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="notes">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/notes{{PageCur=='notes'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='notes'?'text-green':'text-gray'}}">笔记</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="about">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/about{{PageCur=='about'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='about'?'text-green':'text-gray'}}">关于</view>
+  </view>
+</view>
