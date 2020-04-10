@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "detail": "/pages/detail/detail",
+    "graph": "/pages/graph/graph",
+    "notes": "/pages/notes/notes",
+    "about": "/pages/about/about"
+    
+  }
 }

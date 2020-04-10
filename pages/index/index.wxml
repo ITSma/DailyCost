@@ -1,13 +1,13 @@
-<basics wx:if="{{PageCur=='basics'}}"></basics>
+<detail wx:if="{{PageCur=='detail'}}"></detail>
 <graph wx:if="{{PageCur=='graph'}}"></graph>
 <notes wx:if="{{PageCur=='notes'}}"></notes>
 <about wx:if="{{PageCur=='about'}}"></about>
 <view class="cu-bar tabbar bg-white shadow foot">
-  <view class="action" bindtap="NavChange" data-cur="basics">
+  <view class="action" bindtap="NavChange" data-cur="detail">
     <view class='cuIcon-cu-image'>
       <image src="/images/tabbar/detail{{PageCur=='detail'?'_cur':''}}.png"></image>
     </view>
-    <view class="{{PageCur=='basics'?'text-green':'text-gray'}}">明细</view>
+    <view class="{{PageCur=='detail'?'text-green':'text-gray'}}">明细</view>
   </view>
   <view class="action" bindtap="NavChange" data-cur="graph">
     <view class='cuIcon-cu-image'>
