@@ -1,1 +1,77 @@
 /* pages/detail/detail.wxss */
+
+.detailHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    height: 128rpx;
+    background-color: #ffff33;
+}
+
+.income{
+    width: 33%;
+    height: 128rpx;
+    /* background: white; */
+    margin-left: 20rpx;
+    padding-left: 30rpx;
+}
+
+.outcome{
+    width: 33%;
+    height: 128rpx;
+    /* background: white; */
+    padding-left: 20rpx;
+    margin-left: 20rpx;
+}
+
+.incomeNum{
+    padding-top: 10rpx;
+}
+.outcomeNum{
+    padding-top: 10rpx;
+}
+
+
+.dateBox{
+    width: auto;
+    height: 128rpx;
+    /* background: greenyellow; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.weui-btn-area{
+    margin-top: 0;
+    margin-left: 40rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 200rpx;
+
+    /* background:white; */
+}
+
+.dateY{
+    text-align: center;
+}
+
+.dateM{
+    /* background: #ffff33; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dateM image{
+    width: 30rpx;
+    height: 30rpx;
+}
+
+

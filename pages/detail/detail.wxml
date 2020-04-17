@@ -1,1 +1,34 @@
-<view>detail</view>
+<view class="detailHead">
+    <view class="dateBox">
+        <view class="weui-btn-area">
+            <picker mode="date" value="{{date}}" start="2018-09-01" end="2030-09-01" bindchange="bindDateChange">
+                <!-- <a class="weui-btn weui-btn_default">日期选择器</a> -->
+                <!-- <a style="font-size:20rpx" class="dateY">2020年</a>
+                <a style="font-size:40px" class="dateM">4</a>
+                <a class="datxx">月</a> -->
+                <view style="font-size:20rpx" class="dateY">{{year}}年</view>
+                <view class="dateM">
+                    <view  class="monthNum">
+                        <text style="font-size:50rpx;font-weight:500" class="currentM">{{month}}</text>
+                    </view>
+                    <view class="monthText">
+                        <text >月</text>
+                        <image src="../../images/下拉.png" />
+                    </view>
+
+                </view>
+
+            </picker>
+        </view>
+    </view>
+    <view class="income">
+        <view style="font-size:20rpx;" class="incomeText">收入</view>
+        <view style="font-size:40rpx;font-weight:500" class="incomeNum">111.00</view>
+    </view>
+    <view class="outcome">
+        <view style="font-size:20rpx" class="outcomeText">支出</view>
+        <view style="font-size:40rpx;font-weight:500" class="outcomeNum">2222.00</view>
+    </view>
+
+</view>
+<scroll-view class="detailContent"></scroll-view>
